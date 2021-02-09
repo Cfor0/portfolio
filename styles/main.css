@@ -11,10 +11,6 @@ body {
     flex-direction: column;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: #333; */
     color: white;
 }
 
@@ -25,6 +21,7 @@ body {
 
 .navbar-links ul {
     display: flex;
+    justify-content: space-around;
 }
 
 .navbar-links li {
@@ -34,7 +31,7 @@ body {
 .navbar-links li a {
     text-decoration: none;
     color: white;
-    padding: 1rem;
+    padding: 1rem 3rem;
     display: block;
 }
 
@@ -65,7 +62,7 @@ body {
 
 .main-container {
     background: url('../images/bg.jpg') no-repeat center;
-    height: 700px;
+    min-height: 100vh;
     position: relative;
     background-size: cover;
 }
@@ -111,6 +108,36 @@ h1 {
     opacity: .8;
 }
 
+/*
+    About Me 
+*/
+
+.about-container {
+   flex-direction: column;
+   text-align: center;
+   min-height: 100vh;
+   background: url('../images/aboutBg.jpg');
+   background-size: cover;
+}
+
+.about-container h2 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin: 2rem;
+}
+
+.profile-pic {
+    border-radius: 15em;
+    height: 250px;
+}
+
+.about-container p {
+    margin: 3rem;
+    color: whitesmoke;
+    line-height: 3rem;
+}
 
 /* 
     Footer 
@@ -157,5 +184,13 @@ footer {
 
     .navbar-links.active {
         display: flex;
+    }
+
+    h1 {
+        font-size: 3em;
+        letter-spacing: .1em;
+        border: 10px solid white;
+        padding: 3px 7px;
+        display: inline-block;
     }
 }
