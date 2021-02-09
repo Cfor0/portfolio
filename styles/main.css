@@ -9,6 +9,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    animation: transitionIn .5s;
 }
 .navbar {
     color: white;
@@ -56,6 +57,7 @@ body {
     border-radius: 10px;
 }
 
+
 /*
     Hero Image
 */
@@ -65,6 +67,7 @@ body {
     min-height: 100vh;
     position: relative;
     background-size: cover;
+    
 }
 
 .inner-container {
@@ -118,6 +121,7 @@ h1 {
    min-height: 100vh;
    background: url('../images/aboutBg.jpg');
    background-size: cover;
+   animation: transitionIn .75s;
 }
 
 .about-container h2 {
@@ -154,7 +158,17 @@ footer {
     justify-content: center;
 }
 
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
 
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
 
 
 @media (max-width: 500px) {
