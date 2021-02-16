@@ -67,7 +67,6 @@ body {
     min-height: 100vh;
     position: relative;
     background-size: cover;
-    
 }
 
 .inner-container {
@@ -153,9 +152,26 @@ h1 {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
+    margin-top: 2em;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: .5em;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: black;
 }
 
 @keyframes transitionIn {

@@ -1,0 +1,33 @@
+.main-container {
+    background-image: none;
+    background-color: grey;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2em 2em;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px black solid;
+    margin: 2em;
+    padding: 2em;
+}
+
+.p-title {
+    margin: 1em 3em;
+}
+
+h3 {
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
