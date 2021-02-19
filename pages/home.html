@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6ff215c349.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Carlo's Portfolio</title>
 
     <link rel='stylesheet' href="../styles/main.css" />
@@ -11,8 +13,8 @@
 
 <body>
 
-    <div class="main-container" id="home">
-        <nav class="navbar">
+    <section class="main-container" id="home">
+        <nav class="navbar stroke">
             <!-- <div class="brand-title"> Carlo Ortega</div> -->
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
@@ -34,32 +36,46 @@
                 <div class="description">
                     Web developer
                 </div>
-                <a class="btn" onclick="toggleAboutMe()" href="#About">About Me</a>
+                <!-- <div class="btn">About Me</div> -->
+            </div>
+            <div class='arrow bounce'>
+                <i class="fas fa-angle-down fa-3x"></i>
             </div>
         </div>
-    </div>
+
+    </section>
 
 
-    <div class="about-container" id='About' style="display: none;">
-        <h2>About Me</h2>
-        <div class="image">
-            <img class="profile-pic" src="../images/profile-pic.jpeg" alt="photo of me">
+    <section class="about-container" id='About'>
+        <div class="about-container-content-wrapper">
+            <h2>About Me</h2>
+            <div class="image">
+                <img class="profile-pic" src="../images/profile-pic.jpeg" alt="photo of me">
+            </div>
+            <p>My name is Carlo Ortega, and I am a Full-Stack Web Developer. I decided to switch my career path to
+                coding
+                in 2019, and I have been on this amazing journey ever since. After recieving my Full-Stack Web
+                Development
+                certificate from UNCC bootcamp, I had an amazing opportunity to be part of the non-profit program,
+                Road To Hire. This program enhanced my technical skills and elevated my professional development skills.
+                For
+                every new challenge, I see a great learning opportunity and am motivated to use my new skills to
+                better
+                myself and share my knowledge with my network!
+
+            </p>
         </div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius itaque delectus velit quas facere dolorum fuga
-            nobis soluta? Nihil perferendis, error nesciunt numquam corporis et. Suscipit unde deserunt delectus
-            molestiae.
-        </p>
-        <a class="btn" onclick="toggleAboutMe()" href="./home.html">Back to Top</a>
-        
+        <!-- <a class="btn" onclick="toggleAboutMe()" href="./home.html">Back to Top</a> -->
+
         <footer>
-            <h3>Connect with Me!</h3>
             <ul>
                 <li><a href="https://www.linkedin.com/in/carlo-ortega" target="_blank">LinkedIn</a></li>
-                <li><a href="https://drive.google.com/file/d/18gJzt9TE56FIoTcuUmsSh1XWQnDRmgUb/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a href="https://drive.google.com/file/d/18gJzt9TE56FIoTcuUmsSh1XWQnDRmgUb/view?usp=sharing"
+                        target="_blank">Resume</a></li>
                 <li><a href="https://github.com/Cfor0" target="_blank">Github</a></li>
             </ul>
         </footer>
-    </div>
+    </section>
 
 
 
