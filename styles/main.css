@@ -182,7 +182,6 @@ h1 {
 
 .about-container p {
     margin: 3rem 3rem .5rem;
-    /* margin-bottom: 5em; */
     color: black;
     line-height: 3rem;
     text-align: justify;
@@ -267,6 +266,11 @@ footer ul li a:hover {
     }
 }
 
+@media (max-width: 1110px) {
+    .about-container {
+        height: auto;
+     }
+}
 
 @media (max-width: 500px) {
     .toggle-button {
@@ -288,6 +292,7 @@ footer ul li a:hover {
     }
     .navbar-links li{
         text-align: center;
+        margin: .5em;
     }
     .navbar-links li a {
         padding: .5rem 1rem;
@@ -303,5 +308,18 @@ footer ul li a:hover {
         border: 10px solid white;
         padding: 3px 7px;
         display: inline-block;
+    }
+
+    .about-container h2 {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+
+    .profile-pic {
+        height: 200px;
+    }
+
+    .about-container p {
+        line-height: 2rem;
     }
 }
