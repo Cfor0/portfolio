@@ -52,7 +52,7 @@ section {
 
 .navbar-links li a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 1rem 3rem;
 }
 
@@ -79,7 +79,7 @@ nav ul li a:before {
   transition: all .5s;
 }
 nav ul li a:hover {
-  color: black;
+  color: #203166;
 }
 
 /* stroke */
@@ -95,7 +95,7 @@ nav.stroke ul li a:after {
   width: 0%;
   content: '.';
   color: transparent;
-  background: black;
+  background: #203166;
   height: 1px;
 }
 nav.stroke ul li a:hover:after {
@@ -168,7 +168,7 @@ h1 {
 }
 
 .about-container h2 {
-    color: white;
+    color: lightgoldenrodyellow;
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 8px;
@@ -286,7 +286,7 @@ footer ul li a:hover {
      }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-height: 375px)  {
     .toggle-button {
         display: flex;
     }
@@ -298,6 +298,7 @@ footer ul li a:hover {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        margin: 0;
     }
 
     .navbar-links ul {
