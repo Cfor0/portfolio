@@ -73,7 +73,7 @@ section {
     border-radius: 10px;
 }
 a.current{
-    background-color: lightsteelblue;
+    background-color: #6090a6;
 }
 
 
@@ -165,12 +165,13 @@ h1 {
 */
 
 .about-container {
+    display: flex;
    flex-direction: column;
    text-align: center;
    background: url('../images/aboutBg.jpg');
    background-size: cover;
    animation: transitionIn .75s;
-   /* height: auto; */
+   height: auto;
 }
 
 .about-container h2 {
@@ -187,7 +188,7 @@ h1 {
 }
 
 .about-container p {
-    margin: 3rem 3rem .5rem;
+    margin: 1rem 20% .5rem;
     color: black;
     line-height: 3rem;
     text-align: justify;
@@ -271,7 +272,7 @@ footer ul li a:before {
   transition: all .5s;
 }
 footer ul li a:hover {
-  color: white;
+  color: black;
 }
 
 @keyframes transitionIn {
@@ -286,11 +287,11 @@ footer ul li a:hover {
     }
 }
 
-@media (max-width: 1110px) {
+/* @media (max-width: 1380px) {
     .about-container {
         height: auto;
      }
-}
+} */
 
 @media (max-width: 500px), (max-height: 375px)  {
     .toggle-button {
@@ -342,5 +343,6 @@ footer ul li a:hover {
 
     .about-container p {
         line-height: 2rem;
+        margin: 1em 10% .5em;
     }
 }
