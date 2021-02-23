@@ -72,6 +72,10 @@ section {
     background-color: white;
     border-radius: 10px;
 }
+a.current{
+    background-color: lightsteelblue;
+}
+
 
 nav ul li a,
 nav ul li a:after,
@@ -101,6 +105,8 @@ nav.stroke ul li a:after {
 nav.stroke ul li a:hover:after {
   width: 80%;
 }
+
+
 
 /*
     Hero Image
