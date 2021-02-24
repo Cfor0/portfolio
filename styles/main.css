@@ -73,7 +73,7 @@ section {
     border-radius: 10px;
 }
 a.current{
-    background-color: #6090a6;
+    border: black solid 2px;
 }
 
 
