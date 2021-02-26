@@ -72,25 +72,28 @@ section {
     background-color: white;
     border-radius: 10px;
 }
-a.current{
+a.current {
     border: black solid 2px;
+    transition: none;
+    width: 0%;
 }
 
 
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
+
+nav ul li a.non-active,
+nav ul li a.non-active:after,
+nav ul li a.non-active:before {
   transition: all .5s;
 }
-nav ul li a:hover {
+nav ul li a.non-active:hover {
   color: #203166;
 }
 
 /* stroke */
-nav.stroke ul li a {
+nav.stroke ul li a.non-active {
   position: relative;
 }
-nav.stroke ul li a:after {
+nav.stroke ul li a.non-active:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -102,7 +105,7 @@ nav.stroke ul li a:after {
   background: #203166;
   height: 1px;
 }
-nav.stroke ul li a:hover:after {
+nav.stroke ul li a.non-active:hover:after {
   width: 80%;
 }
 
@@ -171,7 +174,7 @@ h1 {
    background: url('../images/aboutBg.jpg');
    background-size: cover;
    animation: transitionIn .75s;
-   height: auto;
+   /* height: auto; */
 }
 
 .about-container h2 {
@@ -230,6 +233,7 @@ h1 {
 
 .about-container-content-wrapper {
     flex: 1;
+    overflow-y: auto;
 }
 
 footer {
